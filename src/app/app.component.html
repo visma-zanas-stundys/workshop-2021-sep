@@ -1,17 +1,16 @@
 <main class="page">
   <header class="page-header">
     <h1>Page</h1>
-    Loading: {{ userIsLoading$ | async | json }}<br />
-    User: {{ user$ | async | json }}
 
     <nav class="nav">
       <a
+        routerLink="/"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
-        routerLink="/"
-        >Home</a
       >
-      <a routerLinkActive="active" routerLink="/product/20">Product #20</a>
+        Home
+      </a>
+      <a routerLink="/product/20" routerLinkActive="active">Product #20 Page</a>
     </nav>
   </header>
   <router-outlet></router-outlet>

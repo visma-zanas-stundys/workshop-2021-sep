@@ -4,7 +4,7 @@
   --padding-y: 0.75cm;
 
   box-sizing: border-box;
-  max-width: 960px;
+  max-width: 480px;
   margin: var(--margin-y) auto;
   background: white;
   aspect-ratio: 210 / 297;
