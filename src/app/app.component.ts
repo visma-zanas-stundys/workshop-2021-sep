@@ -1,19 +1,14 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [],
 })
-export class AppComponent implements OnInit, OnDestroy {
-  title = 'workshop';
+export class AppComponent {
+  user$ = this.userService.user$;
+  userIsLoading$ = this.userService.isLoading$;
 
-  ngOnInit(): void {
-    console.log('Component initializing...');
-  }
-
-  ngOnDestroy(): void {
-    console.log('Destroying component...');
-  }
+  constructor(private userService: UserService) {}
 }

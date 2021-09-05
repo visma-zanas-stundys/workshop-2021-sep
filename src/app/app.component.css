@@ -1,0 +1,52 @@
+.page {
+  --padding-x: 1.5cm;
+  --margin-y: 2cm;
+  --padding-y: 0.75cm;
+
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: var(--margin-y) auto;
+  background: white;
+  aspect-ratio: 210 / 297;
+  padding: var(--padding-y) var(--padding-x);
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.page-header {
+  font-family: monospace;
+  padding-bottom: var(--padding-y);
+  color: rgba(100, 0, 67, 0.9);
+  text-shadow: 0 1px 2px rgba(100, 0, 67, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
+  margin-bottom: var(--padding-y);
+}
+
+.nav {
+  margin-top: var(--padding-y);
+}
+
+.nav a {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav a:hover {
+  background: rgba(100, 0, 67, 0.1);
+}
+
+.nav a:active {
+  background: rgba(100, 0, 67, 0.2);
+}
+
+.nav a + a {
+  margin-left: 4px;
+}
+
+.nav a.active {
+  color: white;
+  background: rgba(100, 0, 67, 0.9);
+}
